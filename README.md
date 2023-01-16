@@ -23,7 +23,7 @@ This repo contains codes related to waste management plants.
 Please bear with me!!
 
 
- 💬 Ask me about anything. I am happy to help
+ 💬 Ask me about anything. I am happy to help :blush:
 
 
 
