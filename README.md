@@ -19,7 +19,7 @@ This repo contains codes related to waste management plants.
     
 ## Sample satellite images:
 
-|**Lat: 52.50872 ,Long: 6.04935 **| ** Lat: ,Long: ** | ** Lat: ,Long: ** |
+|Lat: 52.50872 ,Long: 6.04935 | Lat: 50.3022 ,Long: 19.1417  | Lat: 53.1697 ,Long: 23.0885  |
  :---------------------: |:--------------------:| :--------------:|
 
 
