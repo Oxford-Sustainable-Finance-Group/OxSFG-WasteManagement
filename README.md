@@ -14,6 +14,12 @@ This repo contains codes related to waste management plants.
     * Satellite Images of neighbouring area: Using QGIS and Google satellite images (Code not uploaded)
     
     * Verification of new Coordinates
+    
+    
+    
+## Sample satellite images:
+
+![Alt text](https://github.com/Oxford-Sustainable-Finance-Group/OxSFG-WasteManagement/tree/main/plant-classifcation/data/All-images/1251_52.3616_4.73975.png "Optional title")
 
 
 ## Current status of the repo
