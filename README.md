@@ -23,7 +23,7 @@ This repo contains codes related to waste management plants.
  :-------------: |:-------------:| :-----:|
 
 
-| <img src="https://github.com/Oxford-Sustainable-Finance-Group/OxSFG-WasteManagement/blob/main/plant-classifcation/data/All-images/1253_52.50872_6.04935.png" width="250" height="250"/>|
+| <img src="https://github.com/Oxford-Sustainable-Finance-Group/OxSFG-WasteManagement/blob/main/plant-classifcation/data/All-images/1253_52.50872_6.04935.png" width="250" height="250"/>|<img src="https://github.com/Oxford-Sustainable-Finance-Group/OxSFG-WasteManagement/blob/main/plant-classifcation/data/All-images/1253_52.50872_6.04935.png" width="250" height="250"/>|<img src="https://github.com/Oxford-Sustainable-Finance-Group/OxSFG-WasteManagement/blob/main/plant-classifcation/data/All-images/1253_52.50872_6.04935.png" width="250" height="250"/>
 
 
 
