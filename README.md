@@ -19,7 +19,7 @@ This repo contains codes related to waste management plants.
     
 ## Sample satellite images:
 
-|<img src="https://github.com/Oxford-Sustainable-Finance-Group/OxSFG-WasteManagement/tree/main/plant-classifcation/data/All-images/1252_51.81311_4.5805.png?raw=true" width="250" height="250"/> |
+|<img src= "https://github.com/Oxford-Sustainable-Finance-Group/OxSFG-WasteManagement/tree/main/plant-classifcation/data/All-images/1252_51.81311_4.5805.png?raw=true" width="250" height="250"/> |
 
 
 
