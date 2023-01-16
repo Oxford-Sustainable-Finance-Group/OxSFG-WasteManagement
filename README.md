@@ -1,5 +1,6 @@
 # OxSFG-WasteManagement
-
+ 👋, Hi!
+ 
 This repo contains codes realated to waste management plants.
 
 ## This repo includes codes for:
@@ -20,6 +21,9 @@ This repo contains codes realated to waste management plants.
  * The codes for coordinate validation are upload.
 
 Soon I will update all the readme files as well.
+
+
+- 💬 Ask me about anything, I am happy to help
 
 
 Please bear with me!!
