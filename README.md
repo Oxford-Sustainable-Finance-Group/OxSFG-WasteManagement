@@ -2,7 +2,7 @@
 
 This repo contains codes realated to waste management plants.
 
-## This repo includes:
+## This repo includes codes for:
 
 * Coordinates verification (Waste  management plant classification):
 
