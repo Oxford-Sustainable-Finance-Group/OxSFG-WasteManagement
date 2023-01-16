@@ -15,7 +15,7 @@ This repo contains codes realated to waste management plants.
     * Verifaction of new Coordinates
 
 
-## Current status
+## Current status of repo
 
  * The codes for coordinate validation are upload.
 
