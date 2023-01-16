@@ -1,7 +1,7 @@
 # OxSFG-WasteManagement
  👋, Hi!
  
-This repo contains codes realated to waste management plants.
+This repo contains codes related to waste management plants.
 
 ## This repo includes codes for:
 
