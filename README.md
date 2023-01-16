@@ -35,6 +35,11 @@ Please bear with me!!
 
 
  💬 Ask me about anything. I am happy to help :blush:
+ 
+ 
+ ## Acknowledgement:
+ 
+ * QGIS Development Team (2023). QGIS Geographic Information System. Open Source Geospatial Foundation Project. (http://qgis.osgeo.org)"
 
 
 
