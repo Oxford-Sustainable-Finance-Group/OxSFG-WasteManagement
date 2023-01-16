@@ -1,5 +1,5 @@
 # OxSFG-WasteManagement
- 👋, Hi!
+ 👋, Hi All!
  
 This repo contains codes related to waste management plants.
 
