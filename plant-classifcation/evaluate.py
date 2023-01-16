@@ -102,11 +102,6 @@ def test(args, device):
     print("Test precision: ", precision)
     print("F score: ",f_score)
 
-
-
-
-
-
 def main():
     parser = argparse.ArgumentParser()
     # Required parameters
