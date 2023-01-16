@@ -7,23 +7,23 @@ This repo contains codes related to waste management plants.
 
 * Coordinates verification (Waste  management plant classification):
 
-    * Satalite Images: Using QGIS ang Google satellite images (Code not uploaded)
+    * Satellite Images: Using QGIS and Google satellite images (Code not uploaded)
 
 * Wrong Coordinates correction:
 
-    * Satalite Images of neighbouring area: Using QGIS ang Google satellite images (Code not uploaded)
+    * Satellite Images of neighbouring area: Using QGIS and Google satellite images (Code not uploaded)
     
-    * Verifaction of new Coordinates
+    * Verification of new Coordinates
 
 
-## Current status of repo
+## Current status of the repo
 
- * The codes for coordinate validation are upload. Soon I will update all the readme files as well.
+ * The codes for coordinate validation are uploaded. Soon I will update all the readme files as well.
 
 Please bear with me!!
 
 
- 💬 Ask me about anything, I am happy to help
+ 💬 Ask me about anything. I am happy to help
 
 
 
