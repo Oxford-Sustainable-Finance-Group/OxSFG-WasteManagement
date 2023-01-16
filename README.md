@@ -18,13 +18,13 @@ This repo contains codes realated to waste management plants.
 
 ## Current status of repo
 
- * The codes for coordinate validation are upload.
-
-Soon I will update all the readme files as well.
-
-
-- 💬 Ask me about anything, I am happy to help
-
+ * The codes for coordinate validation are upload. Soon I will update all the readme files as well.
 
 Please bear with me!!
+
+
+ 💬 Ask me about anything, I am happy to help
+
+
+
 
