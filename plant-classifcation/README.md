@@ -7,6 +7,7 @@
 * numpy
 * tensorboard_logger
 * CUDA 10.1
+* PIL
 
 
 If you want to this code for the classification of plant from different sector please update the following parameters in train file:
