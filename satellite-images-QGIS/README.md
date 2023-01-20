@@ -3,7 +3,7 @@
 
 This python script will run into PyQGIS python console.
 
-Steps to run the file:
+* Steps to run the file:
 
     * Add google satellite map as a layer
     
