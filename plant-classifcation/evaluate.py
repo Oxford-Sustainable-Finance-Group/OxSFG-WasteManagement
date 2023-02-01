@@ -53,25 +53,26 @@ def evaluate(args, test_loader, model, criterion, device):
     FN = 0
     FP = 0
     TN = 0
-    for batch in (test_loader):#desc="Testing"
-        x, y, img_name = batch
-        x, y = x.to(device), y.to(device)
-        y_hat = model(x)
-        loss = criterion(y_hat, y)
-        test_loss += loss.detach().cpu().item() / len(test_loader)
-        correct += torch.sum(torch.argmax(y_hat, dim=1) == y).detach().cpu().item()
-        total += len(x)
-        for (output, img) in zip(y_hat, img_name):
-            result[img] = (torch.argmax(output)).item()
-
-        if (y ==1 and torch.argmax(y_hat, dim=1)==1):
-            TP  +=1
-        if (y ==1 and torch.argmax(y_hat, dim=1)==0 ):
-            FN  +=1
-        if (y ==0 and torch.argmax(y_hat, dim=1)==0 ):
-            TN += 1
-        if (y ==0 and torch.argmax(y_hat, dim=1)==1 ):
-            FP +=1
+    with torch.no_grad():
+        for batch in (test_loader):#desc="Testing"
+            
+            x, y, img_name = batch
+            x, y = x.to(device), y.to(device)
+            y_hat = model(x)
+            loss = criterion(y_hat, y)
+            test_loss += loss.detach().cpu().item() / len(test_loader)
+            correct += torch.sum(torch.argmax(y_hat, dim=1) == y).detach().cpu().item()
+            total += len(x)
+            for (output, img) in zip(y_hat, img_name):
+                result[img] = (torch.argmax(output)).item()
+            if (y ==1 and torch.argmax(y_hat, dim=1)==1):
+                TP  +=1
+            if (y ==1 and torch.argmax(y_hat, dim=1)==0 ):
+                FN  +=1
+            if (y ==0 and torch.argmax(y_hat, dim=1)==0 ):
+                TN += 1
+            if (y ==0 and torch.argmax(y_hat, dim=1)==1 ):
+                FP +=1
      
     print(f"TP: {TP:.2f}")
     print(f"FN: {FN:.2f}")
