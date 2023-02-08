@@ -7,11 +7,11 @@ This repo contains codes related to waste management plants.
 
 * Coordinates verification (Waste  management plant classification):
 
-    * Satellite Images: Using QGIS and Google satellite images (Code not uploaded)
+    * Satellite Images: Using QGIS and Google satellite images
 
 * Wrong Coordinates correction:
 
-    * Satellite Images of neighbouring area: Using QGIS and Google satellite images (Code not uploaded)
+    * Satellite Images of neighbouring area: Using QGIS and Google satellite images 
     
     * Verification of new Coordinates
     
