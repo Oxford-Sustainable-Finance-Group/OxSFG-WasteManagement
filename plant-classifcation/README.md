@@ -45,6 +45,4 @@ If you want to this code for the classification of plant from different sector p
 
 
 
-Soon I will update all the readme files as well.
-
-Please bear with me!! :blush:
+:blush:
