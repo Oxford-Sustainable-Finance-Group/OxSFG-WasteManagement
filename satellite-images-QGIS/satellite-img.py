@@ -1,12 +1,14 @@
-# Please note: this PyQGIS file will only in QGIS python console.
 import pandas as pd
 import numpy as np
-
-def create_png(path, name):
+from PyQt5.QtCore import QSize
+def create_png( path, name):
     project = QgsProject.instance()
-    manager = project.layoutManager()  
+    root = project.layerTreeRoot()
+    manager = project.layoutManager()
+    
     layoutName = 'Layout1'
     layouts_list = manager.printLayouts()
+    # remove any duplicate layouts
     for layout in layouts_list:
         if layout.name() == layoutName:
             manager.removeLayout(layout)
@@ -14,12 +16,19 @@ def create_png(path, name):
     layout.initializeDefaults()
     layout.setName(layoutName)
     manager.addLayout(layout)
-    # create map item in the layout
     map = QgsLayoutItemMap(layout)
-    map.setRect(20, 20, 20, 20) 
-    rect = iface.mapCanvas().extent()
+    map.setRect(10, 10, 10, 10) 
+    rect = iface.mapCanvas().extent()    
+    rect.scale(0.1)
+    iface.mapCanvas().resize(QSize(1157,149)) #used to fix the canvas so that it won't get changed with change in display size
+    canvasSize = qgis.utils.iface.mapCanvas().size()    
+    #print("Width : " + str(canvasSize.width()) + " / Height : " + str(canvasSize.height())) # to see the canvas size
+    #iface.mapCanvas().zoomScale(500)
     map.setExtent(rect)
-    map.setBackgroundColor(QColor(255, 255, 255, 0))
+    
+    #canvas.setExtent(rect)
+    #canvas.refresh
+    map.setBackgroundColor(QColor(255, 255, 255, 255))
     layout.addLayoutItem(map)
     map.attemptMove(QgsLayoutPoint(0, 0, QgsUnitTypes.LayoutMillimeters))
     map.attemptResize(QgsLayoutSize(297, 210, QgsUnitTypes.LayoutMillimeters))
@@ -31,18 +40,25 @@ def create_png(path, name):
     exporter.exportToImage(fn + '.png', QgsLayoutExporter.ImageExportSettings())
 
 
+path = "/Users/aloksingh/Documents/Oxford/Waste-management/USA/"
 
-path = "/Users/aloksingh/Documents/Oxford/Waste-management/plant-classification/model/results/clean/new-img/" # path to the folder where images will be saved
-data = pd.read_csv("/Users/aloksingh/Documents/Oxford/Waste-management/plant-classification/model/results/clean/stage1-result/test_no_plant_result.txt", names= ['id','lat','long','p','p2'], delimiter='\t')
+''' If you want to read Xlsx file use below command'''
 
-for i in range(len(data)):#len(data)
-    id =  data.iloc[i][0]
-    lat = data.iloc[i][1]
-    long =data.iloc[i][2]
-    name= str(int(id))+'_'+str(lat)+'_'+str(long)
+
+data = pd.read_excel("/Users/aloksingh/Documents/Oxford/Waste-management/Lat_lon_USA.xlsx",usecols=["LAT_No_round","LON_No_round"])
+
+''' If you want to read csv file use below command'''
+
+#data = pd.read_csv("/Users/aloksingh/Documents/Oxford/Waste-management/Hydro-dataset-germany.csv",usecols=["LAT_WWTP","LON_WWTP"])
+
+for i in range(len(data)):
+    lat = data.iloc[i][0]
+    long = data.iloc[i][1]
+    name= str(i)+'_'+str(lat)+'_'+str(long)
     canvas = iface.mapCanvas()
     centre = canvas.extent().center()
     current_scale = canvas.scale()
     canvas.setCenter(QgsPointXY(np.float(long),np.float(lat)))
-    canvas.zoomScale(500)# this will control the zoom level. It can be changed accordingly.  For zoomin the value should be closer to 0 and for zoom out the value should be high 
+    #canvas.zoomScale(200)#same as rect.scale(0.1)
+    #canvas.setRotation(180)
     create_png(path, name)
